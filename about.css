@@ -1,0 +1,184 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, p {
+    margin-bottom: 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: black;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    
+}
+
+.dark-mode .navbar {
+    background-color: #333;
+}
+
+.dark-mode .nav-link {
+    color: #fff;
+}
+
+/* Instructions Section */
+#imp {
+    font-size: 1.2rem;
+   
+}
+
+/* Expertise Section */
+#expertise-section {
+    padding: 30px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-heading {
+    font-size: 2rem;
+    color: #007bff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.expertise-entry {
+    margin: 20px 0;
+}
+
+.expertise-entry p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background: #007bff;
+    margin: 15px 0;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+}
+
+/* Hover and Transition Effects */
+.navbar .nav-link:hover,
+.toggle-theme button:hover {
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+
+    #expertise-section {
+        padding: 20px;
+    }
+
+    .expertise-entry p {
+        font-size: 1rem;
+    }
+}
+
+#expertise-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .section-heading {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .expertise-entry {
+    margin-bottom: 30px;
+  }
+  
+  h3 {
+    font-size: 1.6rem;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  h4 {
+    font-size: 1.3rem;
+    color: #666;
+  }
+  
+  hr {
+    border: none;
+    height: 2px;
+    background-color: #ddd;
+    margin-top: 20px;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    #expertise-section {
+      padding: 10px;
+    }
+  
+    .section-heading {
+      font-size: 2rem;
+    }
+  
+    h3 {
+      font-size: 1.4rem;
+    }
+  
+    h4 {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section-heading {
+      font-size: 1.8rem;
+    }
+  
+    h3 {
+      font-size: 1.2rem;
+    }
+  
+    h4 {
+      font-size: 1rem;
+    }
+  }
+  

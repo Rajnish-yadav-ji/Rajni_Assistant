@@ -1,0 +1,215 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #2d2d2d;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 2rem;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 20px;
+}
+
+.navbar-nav .nav-link {
+    color: black;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00bcd4;
+}
+
+.toggle-theme {
+    margin-right: 10px;
+}
+
+.toggle-theme button {
+    background-color: #00bcd4;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toggle-theme button:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+}
+
+/* Image Styles */
+.robo {
+    height: 50vh;
+    max-width: 100%; /* Ensure the image takes full width */
+    border-radius: 10px;
+    object-fit: cover; /* Ensures image scales without distortion */
+}
+
+/* Voice GIF */
+.voice-gif {
+    position: absolute;
+    border-radius: 50%;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: auto;
+    z-index: 10;
+    display: none;
+}
+
+/* Button Styles */
+#btn {
+    position: absolute;
+    bottom: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 1rem;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: auto;
+    animation: pulse 0.8s infinite;
+    transform-origin: center; /* Ensures scaling happens from the center */
+    
+}
+
+#btn img {
+    width: 25px;
+    height: auto;
+}
+
+#btn #content {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Textarea Styles */
+#speech-output {
+    position: absolute;
+    bottom: 36%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    padding: 10px;
+    color: turquoise;
+    font-weight: 500;
+    font-size: 1.5rem;
+    border:none;
+    background-color: transparent;
+    border-radius: 8px;
+    width: 30%; /* Ensure it adjusts based on image width */
+    max-width: 100%; /* Make sure it doesn't exceed the screen width */
+    height: 20%;
+    resize: none;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+
+#speech-output.visible {
+    display: block;
+}
+
+/* Voice Changer Styles */
+#voice-changer {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.65em;
+    font-family: 'Arial', sans-serif;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#voice-changer:hover {
+    border-color: #0056b3;
+    background-color: #e6f7ff;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .toggle-theme button {
+    background-color: #ff9800;
+}
+
+.dark-mode .toggle-theme button:hover {
+    background-color: #e68900;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #speech-output {
+        width: 75%; /* Adjust for smaller screens */
+    }
+
+    #btn {
+        width: 75%; /* Adjust the button width for smaller screens */
+    }
+}
+
+/* Custom Width Sync with Image */
+.robo + #speech-output, /* Targets textarea immediately after the image */
+.robo + #speech-output + #btn { /* Targets button immediately after textarea */
+    width: 100%; /* Ensure both take the same width as the image */
+    max-width: 100%; /* They won't exceed the container size */
+}
+
+
+#first {
+    font-size: 1.5rem;
+    color:red;
+    border-right: 3px solid black; /* Adds cursor */
+    padding-right: 5px;
+    white-space: nowrap;
+    overflow: hidden; /* Keeps the text inside the element */
+
+}
+
+/* General Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Navbar Animations */
+.navbar {
+    animation: fadeIn 1s ease-in-out;
+}
+@keyframes pulse {
+    0%   { translateX:(-50%) scale(1.05);}
+   
+    100% {color: seashell; transform:translateX(-50%) scale(1.1);box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;}
+  }

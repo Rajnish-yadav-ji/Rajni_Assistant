@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajni : A Virtual Assistant</title>
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CDN for responsive design -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Rajni-<span style="color: rgb(231, 8, 8);font-size: 22px;">Assist</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Change-Voice
+                        </a>
+                        <ul class="dropdown-menu p-0 m-0">
+                            <li>
+                                <select class="form-select" id="voice-changer">
+                                    <!-- Voices will populate here -->
+                                </select>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="toggle-theme">
+                    <button class="btn btn-outline-success">Dark Mode</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="container mt-4">
+        <h1 id="first" class="text-center mb-4"></h1>
+        <div class="d-flex justify-content-center">
+            <img src="https://cdn.pixabay.com/photo/2023/04/03/12/32/ai-generated-7896711_1280.jpg" 
+                 class="img-fluid rounded robo" 
+                 alt="AI Assistant"
+                 style="max-width: 100%; height: auto; max-height: 80vh;">
+        </div>
+        <div class="my-3">
+            <textarea class="form-control" id="speech-output" rows="3" placeholder="Assistant will display spoken text here..." readonly></textarea>
+        </div>
+        <div class="d-flex justify-content-center my-3">
+            <img src="voice.gif" alt="voice" class="voice-gif">
+        </div>
+        <div class="text-center">
+            <button id="btn" class="btn btn-primary">
+                <img src="mic.svg" alt="mic" class="me-2">
+                <span id="content">Talk To Me</span>
+            </button>
+        </div>
+    </div>
+
+    
+      
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white py-3">
+        <h5>Created By Rajnish Yadav ji</h5>
+    </footer>
+
+    <!-- Bootstrap and JS Links -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

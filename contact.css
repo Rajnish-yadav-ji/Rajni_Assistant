@@ -1,0 +1,100 @@
+/* Custom Styles for Contact Page */
+body {
+    background: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    color: #343a40;
+    margin-bottom: 30px;
+    text-align: center;
+    animation: fadeInDown 1s ease;
+}
+
+.connect-container, .about-me, .education-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease;
+}
+
+.profile-section {
+    text-align: center;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px auto;
+    animation: fadeIn 1.5s ease;
+}
+
+.connect-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.social-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #0056b3;
+}
+
+.bio-text, .education-details {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #343a40;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Transitions for interactivity */
+.connect-info p {
+    transition: transform 0.3s ease-in-out;
+}
+
+.connect-info p:hover {
+    transform: scale(1.05);
+}
